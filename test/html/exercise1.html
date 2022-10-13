@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 1</title>
+    <script type="text/javascript">
+        var n;
+
+        function input() {
+            n = parseInt(prompt('Enter n number: '));
+        }
+
+        function output() {
+            var i, j;
+            for (i = 1; i <= n; i++) {
+                for (j = 1; j < i; j++) {
+                    document.write('<span> ' + j + ' </span>');
+                }
+
+                for (j = i; j >= 1; j--) {
+                    document.write('<span> ' + j + ' </span>');
+                }
+
+                document.write('<br/>');
+            }
+        }
+        input();
+        output();
+    </script>
+</head>
+
+<body></body>
+
+</html>
