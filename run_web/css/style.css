@@ -16,3 +16,8 @@ align-content: center;
     padding-left: 10px;
     font-weight: 600;
 }
+
+#slider{
+    width: 500px;
+    background-color: brown;
+}
