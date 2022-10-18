@@ -1,23 +1,100 @@
-.body{
-    padding: 0;
-    margin: 0;
-    width: 1024px;
-}
-.header{
-background-color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-display: flex;
-align-content: center;
-}
-.header div{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 10px;
-    padding-left: 10px;
-    font-weight: 600;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252a;
 }
 
-#slider{
-    width: 500px;
-    background-color: brown;
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.nav_link {
+  list-style: none;
+}
+.nav_link li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav_link li {
+  transition: all 0.3s ease 0s;
+}
+.nav_link li a:hover {
+  color: #0088a9;
+}
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+body {
+  margin: 0;
+}
+div#slider {
+  overflow: hidden;
+}
+div#slider figure img {
+  width: 20%;
+  float: left;
+}
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
 }
