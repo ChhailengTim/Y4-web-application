@@ -10,7 +10,13 @@
       .thumbnail {
         width: 300px;
       }
+      .profile-channel {
+        width: 40px;
+        border-radius: 50%;
+        display: inline-block;
+      }
       .video-title {
+        display: inline-block;
       }
       .video-author {
         display: inline-block;
@@ -23,16 +29,28 @@
   <body>
     <div class="video-preview">
       <input class="search-bar" type="text" placeholder="Search" />
-      <img
-        class="thumbnail"
-        src="https://i.ytimg.com/vi/nHXLfMeNoLA/maxresdefault.jpg"
-        alt=""
-      />
-      <p class="video-title">
-        VANNDA - YOUNG MAN FEAT. OG BOBBY (OFFICIAL MUSIC VIDEO)
-      </p>
-      <p class="video-author">វណ្ណដា-VannDa Official</p>
-      <p class="video-stat">11,254,261 views Premiered Jul 1, 2022</p>
+      <div>
+        <img
+          class="thumbnail"
+          src="https://i.ytimg.com/vi/nHXLfMeNoLA/maxresdefault.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="profile-channel"
+          src="https://yt3.googleusercontent.com/ytc/AL5GRJUVkuf4U2RTjhCzzOYucg2xobF9BsjnyDjeYlVKpA=s176-c-k-c0x00ffffff-no-rj-mo"
+          alt=""
+        />
+      </div>
+      <div>
+        <p class="video-title">
+          VANNDA - YOUNG MAN FEAT. <br />
+          OG BOBBY (OFFICIAL MUSIC VIDEO)
+        </p>
+        <p class="video-author">វណ្ណដា-VannDa Official</p>
+        <p class="video-stat">11,254,261 views Premiered Jul 1, 2022</p>
+      </div>
     </div>
   </body>
 </html>
